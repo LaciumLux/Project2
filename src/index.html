@@ -1,18 +1,375 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Project</title>
-    <link href="../dist/output.css" rel="stylesheet">
+    <title>Участники</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<div class="bg-blue-500 text-white p-4">
-    <h1 class="text-3xl font-bold">Hello Tailwind!</h1>
-    <p class="mt-2">Tailwind CSS is working!</p>
-    <button class="bg-green-500 hover:bg-green-700 px-4 py-2 rounded mt-4">
-        Click me
-    </button>
+
+<body class="bg-gray-100 min-h-screen">
+<div id="users-page" class="container mx-auto px-4 py-4">
+    <div class="bg-white rounded-2xl border border-gray-200 p-4">
+        <div class="mb-4 pb-4 border-b border-gray-200">
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                <div class="flex items-center">
+                    <img src="./icons/icons8-группа-пользователей-2-32.png" alt="Участники"
+                         class="w-6 h-6 sm:w-8 sm:h-8 mr-2 sm:mr-3">
+                    <h1 class="text-base sm:text-lg font-bold text-gray-800 mr-3">Участники</h1>
+                    <button id="add-users-btn"
+                            class="bg-blue-500 hover:bg-blue-600 text-white px-3 sm:px-4 py-1 rounded-lg transition flex items-center text-sm">
+                        Добавить
+                    </button>
+                </div>
+
+                <div class="relative w-full sm:w-48">
+                    <input type="text"
+                           placeholder="Поиск по имени..."
+                           class="w-full pl-7 pr-2 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 
+                       focus:ring-blue-500 h-8 bg-[url('./icons/icons8-поиск-32-сер.png')] 
+                       bg-no-repeat bg-[position:10px_center] bg-[length:15px_15px] text-sm">
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white">
+            <div class="overflow-x-auto">
+                <div class="min-w-max">
+                    <table class="w-full overflow-hidden divide-y divide-gray-200 border border-gray-200">
+                        <thead class="bg-gray-200">
+                        <tr>
+                            <th class="px-2 py-3 text-left text-xs sm:text-sm font-medium w-2"></th>
+                            <th class="px-2 py-3 text-left text-xs sm:text-sm font-medium text-gray-500">ФИО</th>
+                            <th class="px-2 py-3 text-left text-xs sm:text-sm font-medium text-gray-500 hidden sm:table-cell">
+                                Дата рождения
+                            </th>
+                            <th class="px-2 py-3 text-left text-xs sm:text-sm font-medium text-gray-500">Пол</th>
+                            <th class="px-2 py-3 text-left text-xs sm:text-sm font-medium text-gray-500">Действия</th>
+                        </tr>
+                        </thead>
+                        <tbody class="bg-white divide-y divide-gray-200">
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm font-bold text-gray-900 max-w-[100px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">тест 666</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">01.01.0001</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                01.01.0001
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm font-bold text-gray-900 max-w-[100px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">тест сервер</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">01.01.0001</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                01.01.0001
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm font-bold text-gray-900 max-w-[100px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">ивае</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">02.11.2000</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                02.11.2000
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">ж</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm font-bold text-gray-900 max-w-[100px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">сервер пипл</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">01.01.0001</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                01.01.0001
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm font-bold text-gray-900 max-w-[100px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">прапрГП</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">02.11.2000</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                02.11.2000
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">ж</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm font-bold text-gray-900 max-w-[100px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">норм время 4545</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">01.01.0001</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                01.01.0001
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm font-bold text-gray-900 max-w-[100px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">новый иван Фёдорович1113333</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">17.11.2000</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                17.11.2000
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3">
+                                <input type="checkbox"">
+                            </td>
+                            <td class="px-2 py-3 t ext-left text-xs sm:text-sm font-bold text-gray-900">
+                                <div>для крутого клуба</div>
+                                <div class="text-xs text-gray-500 sm:hidden mt-1">02.11.2000</div>
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500 hidden sm:table-cell">
+                                02.11.2000
+                            </td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-2 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+
+                        <!--
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm font-bold text-gray-900">тест сервер</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">01.01.0001</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm font-bold text-gray-900">ивае</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">02.11.2000</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">ж</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm font-bold text-gray-900">сервер пипл</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">01.01.0001</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm font-bold text-gray-900">прапрГП</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">02.11.2000</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">ж</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm font-bold text-gray-900">норм время 4545</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">01.01.0001</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 whitespace-nowrap">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm font-bold text-gray-900">новый иван
+                                Федорович1113333
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">17.11.2000</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 py-3 ">
+                                <input type="checkbox" class="rounded border-gray-300 text-blue-600 focus:ring-blue-500">
+                            </td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm font-bold text-gray-900">для крутого клуба</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">02.11.2000</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">м</td>
+                            <td class="px-4 py-3 text-left text-xs sm:text-sm text-gray-500">
+                                <button class="edit-btn">
+                                    <img src="./icons/icons8-заметка-32.png" alt="Редактирование"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                                <button class="del-btn">
+                                    <img src="./icons/icons8-мусор-32.png" alt="Удаление"
+                                         class="w-4 h-4 sm:w-6 sm:h-6 mr-2 sm:mr-3"/>
+                                </button>
+                            </td>
+                        </tr> 
+                        
+                        -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
