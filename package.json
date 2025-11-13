@@ -4,21 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
-    "build-prod": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
-    "build:css": "npx @tailwindcss/cli -i ./src/input.css -o dist/output.css"
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "build-prod": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "daisyui": "^5.5.3",
-    "tailwindcss": "^4.1.17"
-  },
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.17",
-    "autoprefixer": "^10.4.22",
-    "postcss": "^8.5.6"
+    "daisyui": "^5.0.51",
+    "tailwindcss": "^4.1.12"
   }
 }
