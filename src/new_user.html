@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Добавление участника</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./dist/daisy.css" rel="stylesheet">
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+-->
 </head>
 
 <div id="new-user-page" class="container mx-auto px-4 py-4 mb-4">
@@ -14,7 +18,7 @@
         <h1 class="text-base sm:text-lg font-bold text-gray-800 mr-3">Новый участник</h1>
     </div>
 
-    <div class="bg-white rounded-2xl border border-gray-200 p-4">
+    <div class="bg-primary rounded-2xl border border-gray-200 p-4">
         <div class="mb-4 pb-4 border-b border-gray-200">
             <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                 <div class="flex items-center">
@@ -117,6 +121,7 @@
             <button class="px-6 py-3 border border-gray-300 rounded-lg text-gray-700 hover:bg-red-400 transition-colors w-full sm:w-auto">
                 Отмена
             </button>
+            <button class="btn">Default</button>
             <button class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors w-full sm:w-auto">
                 Сохранить
             </button>
