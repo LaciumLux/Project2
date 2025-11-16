@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@source "../src/**/*.{html,js}";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@plugin "daisyui"{
+    themes: nord --default;
+    root: ":root";
+    utils: true;
+    styled: true;
+    base: true;
+};
