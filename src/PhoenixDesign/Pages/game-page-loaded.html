@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix - Мероприятие загружено</title>
+    <link rel="stylesheet" href="../css/tailwind.phoenixui.min.css">
+</head>
+<body class="bg-base-200" style="height: 100vh; overflow: hidden;">
+    <!-- Navigation -->
+    <div class="navbar bg-primary text-primary-content">
+        <div class="flex-1">
+            <a href="../index.html" class="btn btn-ghost text-xl">← Назад к навигации</a>
+        </div>
+    </div>
+
+    <div class="flex flex-col h-full bg-base-200 overflow-hidden" style="height: calc(100vh - 64px);">
+        <!-- Top Bar (GameTopBar) -->
+        <div class="flex-shrink-0 bg-neutral-900 border-b border-neutral-800 p-4">
+            <div class="flex items-center justify-between gap-4 flex-wrap">
+                <!-- Левая часть: Мероприятие, Сквод, Упражнение -->
+                <div class="flex items-center gap-4 flex-wrap">
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm text-neutral-400">Мероприятие:</span>
+                        <select class="select select-bordered select-sm bg-neutral-800 text-neutral-200">
+                            <option>Чемпионат 2024</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm text-neutral-400">Сквод:</span>
+                        <select class="select select-bordered select-sm bg-neutral-800 text-neutral-200">
+                            <option>Сквод 1</option>
+                            <option>Сквод 2</option>
+                        </select>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <span class="text-sm text-neutral-400">Упражнение:</span>
+                        <select class="select select-bordered select-sm bg-neutral-800 text-neutral-200">
+                            <option>4 выстрела 25см</option>
+                            <option>5 выстрелов 38см</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Правая часть: Участник, Следующий -->
+                <div class="flex items-center gap-4">
+                    <button class="btn btn-primary btn-sm">
+                        Иван Иванов
+                    </button>
+                    <button class="btn btn-secondary btn-sm" disabled>
+                        Следующий: Петр Петров
+                    </button>
+                    <button class="btn btn-ghost btn-sm">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                        </svg>
+                    </button>
+                    <button class="btn btn-ghost btn-sm">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Main Content - ExercisePage -->
+        <div class="flex-1 overflow-hidden">
+            <!-- Здесь встроен ExercisePage -->
+            <iframe src="exercise-page.html" class="w-full h-full border-0"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+

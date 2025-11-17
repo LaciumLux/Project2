@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix - Упражнение</title>
+    <link rel="stylesheet" href="../css/tailwind.phoenixui.min.css">
+</head>
+<body class="bg-base-200" style="height: 100vh; overflow: hidden;">
+    <!-- Navigation -->
+    <div class="navbar bg-primary text-primary-content">
+        <div class="flex-1">
+            <a href="../index.html" class="btn btn-ghost text-xl">← Назад к навигации</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div style="display: flex; height: calc(100vh - 64px); gap: 8px; padding: 8px; overflow: hidden;">    
+        <!-- Левая колонка -->
+        <div style="flex: 1; background: #1f2937; border-radius: 8px; display: flex; flex-direction: column; overflow: hidden;">
+            
+            <!-- Панель управления -->
+            <div style="flex-shrink: 0; border-bottom: 1px solid #374151; background: rgba(15, 23, 42, 0.6);">
+                <div style="padding: 16px;">
+                    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px;">
+                        <!-- Кнопка увеличения -->
+                        <button class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-sky-500/30 bg-neutral-800 text-sky-400 hover:bg-neutral-700 hover:border-sky-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/50 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        
+                        <!-- Кнопка уменьшения -->
+                        <button class="inline-flex h-10 w-10 items-center justify-center rounded-md border border-sky-500/30 bg-neutral-800 text-sky-400 hover:bg-neutral-700 hover:border-sky-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/50 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        
+                        <!-- Кнопка сброса зума -->
+                        <button class="inline-flex h-10 items-center rounded-md border border-purple-500/30 bg-neutral-800 px-3 text-sm font-medium text-purple-400 hover:bg-neutral-700 hover:border-purple-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-purple-500/50 transition-colors">
+                            Сброс
+                        </button>
+                        
+                        <!-- Таймер -->
+                        <div class="inline-flex h-10 items-center rounded-md border border-sky-500/30 bg-neutral-800 px-4 font-mono text-lg font-bold text-sky-300">
+                            12.45
+                        </div>
+                        
+                        <!-- Кнопка Старт/Стоп -->
+                        <button class="inline-flex h-10 items-center rounded-md border border-emerald-500/30 bg-neutral-800 px-6 text-sm font-medium text-emerald-400 hover:bg-neutral-700 hover:border-emerald-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500/50 transition-colors">
+                            Стоп
+                        </button>
+                        
+                        <!-- Кнопка сброса упражнения -->
+                        <button class="inline-flex h-10 items-center rounded-md border border-amber-500/30 bg-neutral-800 px-6 text-sm font-medium text-amber-400 hover:bg-neutral-700 hover:border-amber-500/50 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-500/50 transition-colors">
+                            Сброс
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Конец панели управления -->
+            
+            <!-- Целевая область - растягивается и масштабируется -->
+            <div style="flex: 1; background: rgba(15, 23, 42, 0.6); display: flex; align-items: center; justify-content: center; padding: 24px; min-height: 0; overflow: hidden;">
+                <!-- Здесь будет SVG мишень -->
+                <div style="width: 400px; height: 400px; border: 2px dashed #374151; border-radius: 8px; display: flex; align-items: center; justify-content: center; color: #6b7280;">
+                    <span>Мишень (SVG компонент)</span>
+                </div>
+            </div>
+            <!-- Конец целевой области -->
+            
+        </div>
+        <!-- Конец левой колонки -->
+
+        <!-- Правая колонка: результаты -->
+        <div style="flex: 1; background: #1f2937; border-radius: 8px; overflow: hidden;">
+            <!-- PhoenixResultPanel -->
+            <div class="h-full flex flex-col bg-neutral-900/60 rounded-lg overflow-hidden">
+                <!-- Заголовок -->
+                <div class="flex-shrink-0 px-4 py-3 border-b border-neutral-800 bg-neutral-800/30 rounded-t-lg">
+                    <h2 class="text-lg font-semibold text-neutral-200 flex items-center gap-2">
+                        <span class="text-sky-500">🏆</span> Итого баллов: 
+                        <span class="font-medium text-neutral-300">45</span>
+                    </h2>
+                </div>
+
+                <!-- Таблица -->
+                <div id="results-table-container" class="flex-1 overflow-y-auto min-h-0">
+                    <table class="w-full border-collapse text-sm">
+                        <thead class="sticky top-0 bg-neutral-800/90 backdrop-blur-sm z-10">
+                            <tr class="text-left">
+                                <th class="px-3 py-2 font-medium text-neutral-400 border-b border-neutral-700">№</th> 
+                                <th class="px-3 py-2 font-medium text-neutral-400 border-b border-neutral-700">Зона</th>
+                                <th class="px-3 py-2 font-medium text-neutral-400 border-b border-neutral-700">Время</th>
+                                <th class="px-3 py-2 font-medium text-neutral-400 border-b border-neutral-700">Сплит</th>
+                                <th class="px-3 py-2 font-medium text-neutral-400 border-b border-neutral-700">Балл</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="divide-y divide-neutral-800">
+                            <tr class="bg-neutral-800/40 hover:bg-neutral-800/60 transition-colors">
+                                <td class="px-3 py-2 text-neutral-100">1</td> 
+                                <td class="px-3 py-2 text-neutral-100">10</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">2.15</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">
+                                    <span class="text-neutral-500">-</span>
+                                </td>
+                                <td class="px-3 py-2 text-neutral-200 font-semibold">10</td>
+                            </tr>
+                            <tr class="bg-neutral-800/40 hover:bg-neutral-800/60 transition-colors">
+                                <td class="px-3 py-2 text-neutral-100">2</td> 
+                                <td class="px-3 py-2 text-neutral-100">9</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">4.32</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">2.17</td>
+                                <td class="px-3 py-2 text-neutral-200 font-semibold">9</td>
+                            </tr>
+                            <tr class="bg-neutral-800/40 hover:bg-neutral-800/60 transition-colors">
+                                <td class="px-3 py-2 text-neutral-100">3</td> 
+                                <td class="px-3 py-2 text-neutral-100">8</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">6.78</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">2.46</td>
+                                <td class="px-3 py-2 text-neutral-200 font-semibold">8</td>
+                            </tr>
+                            <tr class="bg-neutral-800/40 hover:bg-neutral-800/60 transition-colors">
+                                <td class="px-3 py-2 text-neutral-100">4</td> 
+                                <td class="px-3 py-2 text-neutral-100">10</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">9.12</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">2.34</td>
+                                <td class="px-3 py-2 text-neutral-200 font-semibold">10</td>
+                            </tr>
+                            <tr class="bg-neutral-800/40 hover:bg-neutral-800/60 transition-colors">
+                                <td class="px-3 py-2 text-neutral-100">5</td> 
+                                <td class="px-3 py-2 text-neutral-100">8</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">11.45</td>
+                                <td class="px-3 py-2 text-neutral-200 font-mono">2.33</td>
+                                <td class="px-3 py-2 text-neutral-200 font-semibold">8</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Футер -->
+                <div class="flex-shrink-0 px-4 py-3 border-t border-neutral-800 bg-neutral-800/30 rounded-b-lg">
+                    <div class="grid grid-cols-3 gap-4 text-sm">
+                        <div class="flex flex-col items-center">
+                            <span class="text-neutral-500 text-xs">Попаданий</span>
+                            <span class="font-medium text-neutral-200">5</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-neutral-500 text-xs">Ср. сплит</span>
+                            <span class="font-medium text-neutral-200 font-mono">2.32</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-neutral-500 text-xs">Ср. балл</span>
+                            <span class="font-medium text-neutral-200">9.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Конец правой колонки -->
+        
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phoenix - Top Bar</title>
+    <link rel="stylesheet" href="../css/tailwind.phoenixui.min.css">
+</head>
+<body class="bg-base-200">
+    <!-- Navigation -->
+    <div class="navbar bg-primary text-primary-content">
+        <div class="flex-1">
+            <a href="../index.html" class="btn btn-ghost text-xl">← Назад к навигации</a>
+        </div>
+    </div>
+
+    <!-- Top Bar Component -->
+    <div class="sticky top-0 z-50 border-b border-neutral-800 bg-neutral-900/95 backdrop-blur-sm shadow-sm">
+        <div class="mx-auto max-w-5xl px-4 md:px-6">
+            <div class="flex h-16 items-center justify-between gap-4">
+                <div class="flex items-center gap-4 flex-1">
+                    <!-- Exercise Selector -->
+                    <div class="flex items-center gap-1">
+                        <span class="text-sm font-medium text-neutral-200">Упражнение:</span>
+                        <button class="flex items-center justify-between px-3 py-2 w-40 rounded-lg border border-neutral-700 bg-neutral-900/60 hover:bg-neutral-800/50 transition-colors overflow-hidden whitespace-nowrap" aria-label="Выбрать упражнение">
+                            <span class="text-sm font-medium text-neutral-200 truncate text-left">
+                                4 выстрела 25см
+                            </span>
+                        </button>
+                    </div>
+
+                    <!-- Participant Selector -->
+                    <div class="flex items-center gap-1">
+                        <span class="text-sm font-medium text-neutral-200">Участник:</span>
+                        <button class="flex items-center justify-between px-3 py-2 w-40 rounded-lg border border-neutral-700 bg-neutral-900/60 hover:bg-neutral-800/50 transition-colors overflow-hidden whitespace-nowrap h-10" aria-label="Выбрать участника">
+                            <span class="text-sm font-medium text-neutral-200 truncate text-left">
+                                Иван Иванов
+                            </span>
+                        </button>
+
+                        <button class="flex items-center justify-center w-10 h-10 rounded-lg border border-neutral-700 bg-neutral-900/60 hover:bg-neutral-800/50 transition-colors text-neutral-400 hover:text-red-400" aria-label="Очистить участника">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                            </svg>
+                        </button>
+                    </div>
+                    
+                </div>
+                
+                <div class="tooltip tooltip-bottom flex items-center gap-1">
+                    <div class="tooltip-content flex items-center bg-neutral-900/60 border border-neutral-700 text-neutral-200 rounded-lg px-3 py-2">
+                        <span class="text-sm font-medium">Последние данные с сервера: 15.01.2024 14:30</span>
+                        <button class="ml-2 bg-neutral-700 rounded-lg text-neutral-300 hover:bg-neutral-600 px-2">
+                            Обновить
+                        </button>
+                    </div>
+                    <button class="flex items-center justify-center p-2 rounded-lg border border-neutral-700 bg-neutral-900/60 hover:bg-neutral-800/50 transition-colors text-neutral-400 hover:text-red-400">
+                        Сервер
+                    </button>
+                </div>
+                
+
+                <!-- Device Status -->
+                <div class="flex items-center gap-4">
+                    <div class="flex items-center gap-2 px-3 py-2 rounded-lg border border-neutral-700 bg-neutral-900/60">
+                        <div class="flex items-center gap-1">
+                            <div class="h-2 w-2 rounded-full bg-green-500" />
+                        </div>
+                        <div class="h-4 w-px bg-neutral-700" />
+                        <span class="text-sm font-medium text-neutral-200 truncate">
+                            Phoenix Device
+                        </span>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <div class="flex items-center gap-1">
+                            <span class="text-green-500">
+                                78%
+                            </span>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <span class="text-green-500">
+                                ●●●●
+                            </span>
+                            <span>-45 dBm</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Demo Content -->
+    <div class="container mx-auto p-8">
+        <div class="card bg-base-100 shadow-xl">
+            <div class="card-body">
+                <h2 class="card-title">Top Bar Component</h2>
+                <p>Это компонент TopBar, который отображается в верхней части приложения.</p>
+                <p class="text-sm text-neutral-500 mt-4">Компонент включает:</p>
+                <ul class="list-disc list-inside text-sm text-neutral-400 mt-2">
+                    <li>Выбор упражнения</li>
+                    <li>Выбор участника</li>
+                    <li>Статус подключения к серверу</li>
+                    <li>Статус BLE устройства</li>
+                    <li>Уровень батареи и сигнал</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
