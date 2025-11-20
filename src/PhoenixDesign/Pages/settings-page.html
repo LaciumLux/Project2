@@ -4,130 +4,115 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix - Настройки</title>
-    <link rel="stylesheet" href="../css/tailwind.phoenixui.min.css">
+    <link rel="stylesheet" href="../css/output.css">
 </head>
-<body class="bg-base-200" style="height: 100vh; overflow: hidden;">
-    <!-- Navigation -->
-    <div class="navbar bg-primary text-primary-content">
-        <div class="flex-1">
-            <a href="../index.html" class="btn btn-ghost text-xl">← Назад к навигации</a>
-        </div>
+<body class="min-h-screen bg-base-100 flex flex-col">
+<!-- Navigation -->
+<div class="navbar bg-base-300 flex-shrink-0">
+    <div class="flex-1">
+        <a href="../index.html" class="btn btn-ghost text-sm sm:text-base md:text-lg lg:text-xl">← Назад к
+            навигации</a>
     </div>
+</div>
 
-    <div class="mx-auto max-w-5xl p-6 md:p-8 space-y-6 overflow-y-auto h-full" style="height: calc(100vh - 64px);">
+<div class="flex-1 p-4 md:p-6 lg:p-8 overflow-auto">
+    <div class="max-w-2xl mx-auto space-y-4">
         <!-- Заголовок страницы -->
         <h1 class="sr-only">Панель настроек стрельбы</h1>
 
         <!-- Блок: Отправлять результаты -->
-        <section aria-labelledby="send-results" class="rounded-lg border border-neutral-800 bg-neutral-900/60 shadow-sm">
-            <div class="flex items-center justify-between gap-4 p-4 md:p-5">
-                <div class="flex flex-col">
-                    <h2 id="send-results" class="text-sm font-medium text-neutral-200">
-                        Отправлять результаты
-                    </h2>
-                    <p class="text-xs text-neutral-400">
-                        Включите, чтобы автоматически отправлять результаты после серии
-                    </p>
+        <div class="card bg-base-300 shadow-xl">
+            <div class="card-body p-4 md:p-6">
+                <div class="flex items-center justify-between gap-4">
+                    <div class="flex-1">
+                        <h2 class="card-title text-base md:text-lg">Отправлять результаты</h2>
+                        <p class="text-xs md:text-sm opacity-70 mt-1 md:mt-2">
+                            Включите, чтобы автоматически отправлять результаты после серии
+                        </p>
+                    </div>
+                    <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md"/>
                 </div>
-                <input
-                    type="checkbox"
-                    checked
-                    class="h-5 w-5 rounded-md border border-neutral-700 bg-neutral-900 accent-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"
-                    aria-label="Отправлять результаты" />
             </div>
-        </section>
+        </div>
 
         <!-- Блок: Выбор мишени -->
-        <section aria-labelledby="target-choice" class="rounded-lg border border-neutral-800 bg-neutral-900/60 shadow-sm">
-            <header class="px-4 py-3 md:px-5 md:py-4 border-b border-neutral-800">
-                <h2 id="target-choice" class="text-sm font-semibold text-neutral-200">
-                    Выбор мишени
-                </h2>
-            </header>
+        <div class="card bg-base-300 shadow-xl">
+            <div class="card-body p-0">
+                <h2 class="card-title text-base md:text-lg p-4 md:p-6 border-b border-base-300">Выбор мишени</h2>
 
-            <div class="divide-y divide-neutral-800">
-                <label class="group flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5 hover:bg-neutral-800/50">
-                    <div class="flex min-w-0 items-center gap-4">
-                        <div class="flex h-12 w-12 items-center justify-center rounded-md border border-neutral-700 bg-neutral-800 text-[10px] uppercase text-neutral-400">
-                            SVG
-                        </div>
+                <div class="divide-y divide-base-200">
+                    <label class="group flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5">
+                        <div class="flex min-w-0 items-center gap-4">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-md border border-base-content bg-base-content/90 text-[10px] text-base-300">
+                                SVG
+                            </div>
 
-                        <div class="min-w-0">
-                            <p class="truncate text-sm font-medium text-neutral-100">
-                                Мишень грудная №4
-                            </p>
+                            <div class="min-w-0">
+                                <p class="truncate text-sm font-medium text-base-conent">
+                                    Мишень грудная №4
+                                </p>
 
-                            <div class="mt-1 flex flex-wrap items-center gap-2 text-xs text-neutral-400">
-                                <span class="shrink-0">Выберите размер</span>
-                                <select class="h-7 rounded-md border border-neutral-700 bg-neutral-900 px-2 pr-7 text-neutral-200 outline-none ring-0 focus:border-sky-500 focus:ring-2 focus:ring-sky-500/40">
-                                    <option value="" disabled>—</option>
-                                    <option value="25" selected>25</option> 
-                                    <option value="38">38</option> 
-                                </select>
+                                <div class="mt-1 flex flex-wrap items-center gap-2 text-xs text-base-content/50">
+                                    <span class="shrink-0">Выберите размер</span>
+                                    <select class="h-7 rounded-md border border-base-300 bg-base-200 px-2 pr-7 text-base-content outline-none ring-0">
+                                        <option value="" disabled>—</option>
+                                        <option value="25" selected>25</option>
+                                        <option value="38">38</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md"/>
+                    </label>
 
-                    <input
-                        type="checkbox"
-                        checked
-                        class="h-5 w-5 shrink-0 rounded-md border border-neutral-700 bg-neutral-900 accent-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"
-                        aria-label="Выбрать мишень грудная №4" />
-                </label>
+                    <!-- Опция: Мишень IPSC Mini -->
+                    <label class="group flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5">
+                        <div class="flex min-w-0 items-center gap-4">
+                            <div class="flex h-12 w-12 items-center justify-center rounded-md border border-base-content bg-base-content/90 text-[10px] text-base-300">
+                                IPSC
+                            </div>
 
-                <!-- Опция: Мишень IPSC Mini -->
-                <label class="group flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5 hover:bg-neutral-800/50">
-                    <div class="flex min-w-0 items-center gap-4">
-                        <div class="flex h-12 w-12 items-center justify-center rounded-md border border-neutral-700 bg-neutral-800 text-[10px] uppercase text-neutral-400">
-                            IPSC
+                            <div class="min-w-0">
+                                <p class="truncate text-sm font-medium text-base-conent">
+                                    Мишень IPSC Mini
+                                </p>
+                                <p class="mt-1 flex flex-wrap items-center gap-2 text-xs text-base-content/50">
+                                    Зоны A, C, D
+                                </p>
+                            </div>
                         </div>
 
-                        <div class="min-w-0">
-                            <p class="truncate text-sm font-medium text-neutral-100">
-                                Мишень IPSC Mini
-                            </p>
-                            <p class="text-xs text-neutral-400">
-                                Зоны A, C, D
-                            </p>
-                        </div>
+                        <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md"/>
+                    </label>
+                </div>
+                </div>
+        </div>
+
+                <!-- Блок: Параметры серии -->
+        <div class="card bg-base-300 shadow-xl">
+            <div class="card-body p-0">
+                <h2 class="card-title text-base md:text-lg p-4 md:p-6 border-b border-base-100">Параметры серии</h2>
+
+                    <div class="divide-y divide-base-100">
+                        <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5">
+                            <span class="text-sm">Без серии</span>
+                            <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md"/>
+                        </label>
+                        <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5">
+                            <span class="text-sm">3 выстрела</span>
+                            <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md"/>
+                        </label>
+                        <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5">
+                            <span class="text-sm">5 выстрелов</span>
+                            <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md"/>
+                        </label>
+                        <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5">
+                            <span class="text-sm ">10 выстрелов</span>
+                            <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md"/>
+                        </label>
                     </div>
-
-                    <input
-                        type="checkbox"
-                        class="h-5 w-5 shrink-0 rounded-md border border-neutral-700 bg-neutral-900 accent-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"
-                        aria-label="Выбрать мишень IPSC Mini" />
-                </label>
+                </section>
             </div>
-        </section>
-
-        <!-- Блок: Параметры серии -->
-        <section aria-labelledby="series-params" class="rounded-lg border border-neutral-800 bg-neutral-900/60 shadow-sm">
-            <header class="px-4 py-3 md:px-5 md:py-4 border-b border-neutral-800">
-                <h2 id="series-params" class="text-sm font-semibold text-neutral-200">
-                    Параметры серии
-                </h2>
-            </header>
-
-            <div class="divide-y divide-neutral-800">
-                <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5 hover:bg-neutral-800/50">
-                    <span class="text-sm text-neutral-100">Без серии</span>
-                    <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md border border-neutral-700 bg-neutral-900 accent-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"/>
-                </label>
-                <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5 hover:bg-neutral-800/50">
-                    <span class="text-sm text-neutral-100">3 выстрела</span>
-                    <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md border border-neutral-700 bg-neutral-900 accent-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"/>
-                </label>
-                <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5 hover:bg-neutral-800/50">
-                    <span class="text-sm text-neutral-100">5 выстрелов</span>
-                    <input type="checkbox" checked class="h-5 w-5 shrink-0 rounded-md border border-neutral-700 bg-neutral-900 accent-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"/>
-                </label>
-                <label class="flex cursor-pointer items-center justify-between gap-4 p-4 md:p-5 hover:bg-neutral-800/50">
-                    <span class="text-sm text-neutral-100">10 выстрелов</span>
-                    <input type="checkbox" class="h-5 w-5 shrink-0 rounded-md border border-neutral-700 bg-neutral-900 accent-sky-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500/60"/>
-                </label>
-            </div>
-        </section>
-    </div>
 </body>
 </html>
 

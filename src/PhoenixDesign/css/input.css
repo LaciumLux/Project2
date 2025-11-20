@@ -1,13 +1,12 @@
 @import "tailwindcss";
 
-@source "../src/**/*.{html,js}";
-@source"../src/PhoenixDesign/**/*.{html,js}"
+@source"./src/PhoenixDesign/**/*.{html,js}"
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @plugin "daisyui"{
-    themes: nord --default;
+    themes: dark --default;
     root: ":root";
     utils: true;
     styled: true;

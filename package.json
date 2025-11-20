@@ -5,13 +5,15 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --watch",
-    "build-prod": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --minify"
+    "build-prod": "npx @tailwindcss/cli -i ./src/css/input.css -o ./src/css/output.css --minify",
+    "build-phoenix": "npx @tailwindcss/cli -i ./src/PhoenixDesign/css/input.css -o ./src/PhoenixDesign/css/output.css --watch"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "daisyui": "^5.0.51",
-    "tailwindcss": "^4.1.12"
+    "@tailwindcss/cli": "^4.1.17",
+    "daisyui": "^5.5.5",
+    "tailwindcss": "^4.1.17"
   }
 }

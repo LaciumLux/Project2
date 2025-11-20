@@ -4,11 +4,274 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a54e2b15-ba36-49ee-9317-e680199bbdd5" name="Changes" comment="" />
+    <list default="true" id="a54e2b15-ba36-49ee-9317-e680199bbdd5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PhoenixDesign/css/input.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/PhoenixDesign/css/output.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Solution2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Solution2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Solution2/v17/.suo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Solution2/v17/DocumentLayout.backup.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/Solution2/v17/DocumentLayout.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/properties.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/properties.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/properties/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/properties/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/rootcolor.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/rootcolor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/rootcolor/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/rootcolor/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrollgutter.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrollgutter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrollgutter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrollgutter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrolllock.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrolllock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrolllock/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/rootscrolllock/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/scrollbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/scrollbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/scrollbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/scrollbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/svg.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/svg.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/base/svg/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/base/svg/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/chunks.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/chunks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/colors/properties-extended.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/colors/properties-extended.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/colors/properties.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/colors/properties.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/colors/responsive-extended.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/colors/responsive-extended.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/colors/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/colors/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/colors/states-extended.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/colors/states-extended.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/colors/states.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/colors/states.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/alert.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/alert.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/alert/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/alert/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/avatar.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/avatar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/avatar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/avatar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/badge.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/badge.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/badge/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/badge/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/breadcrumbs.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/breadcrumbs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/breadcrumbs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/breadcrumbs/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/button.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/button.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/button/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/button/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/button/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/button/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/calendar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/calendar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/card.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/card.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/carousel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/carousel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/chat.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/chat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/chat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/chat/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/checkbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/checkbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/checkbox/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/checkbox/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/collapse.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/collapse.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/collapse/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/collapse/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/countdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/countdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/countdown/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/countdown/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/diff.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/diff.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/diff/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/diff/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/divider.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/divider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/divider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/divider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/dock.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/dock.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/dock/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/dock/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/drawer.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/drawer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/drawer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/drawer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/dropdown.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/dropdown.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/dropdown/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/dropdown/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/fab.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/fab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/fab/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/fab/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/fieldset.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/fieldset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/fieldset/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/fieldset/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/fileinput.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/fileinput.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/fileinput/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/fileinput/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/filter.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/filter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/filter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/filter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/footer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/footer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/hero.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/hero.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/hero/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/hero/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/hover3d.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/hover3d.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/hover3d/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/hover3d/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/hovergallery.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/hovergallery.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/hovergallery/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/hovergallery/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/indicator.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/indicator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/indicator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/indicator/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/input/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/input/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/kbd.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/kbd.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/kbd/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/kbd/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/label.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/label.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/label/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/label/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/link.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/link.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/link/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/link/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/list.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/loading.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/loading.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/loading/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/loading/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/mask.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/mask.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/mask/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/mask/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/menu/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/menu/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/menu/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/menu/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/mockup.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/mockup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/mockup/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/mockup/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/modal.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/modal.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/modal/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/modal/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/navbar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/navbar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/progress.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/progress.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/progress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/progress/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/radialprogress.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/radialprogress.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/radialprogress/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/radialprogress/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/radio.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/radio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/radio/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/radio/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/range.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/range.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/range/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/range/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/rating.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/rating.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/rating/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/rating/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/select.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/select.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/select/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/select/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/skeleton.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/skeleton.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/skeleton/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/skeleton/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/stack.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/stack.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/stack/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/stack/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/stat.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/stat.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/stat/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/stat/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/status.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/status.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/status/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/status/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/steps.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/steps.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/steps/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/steps/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/swap.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/swap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/swap/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/swap/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/tab.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/tab.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/tab/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/tab/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/table.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/table/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/table/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/textarea.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/textarea.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/textarea/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/textarea/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/textrotate.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/textrotate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/textrotate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/textrotate/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/timeline.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/timeline.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/timeline/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/timeline/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/toast.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/toast.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/toast/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/toast/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/toggle.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/toggle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/toggle/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/toggle/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/tooltip.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/tooltip.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/tooltip/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/tooltip/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/validator.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/validator.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/components/validator/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/components/validator/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/daisyui.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/daisyui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/functions/addPrefix.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/functions/addPrefix.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/functions/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/functions/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/functions/pluginOptionsHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/functions/pluginOptionsHandler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/functions/themeOrder.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/functions/themeOrder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/functions/variables.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/functions/variables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/imports.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/imports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/abyss.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/abyss.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/abyss/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/abyss/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/acid.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/acid.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/acid/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/acid/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/aqua.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/aqua.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/aqua/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/aqua/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/autumn.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/autumn.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/autumn/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/autumn/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/black.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/black.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/black/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/black/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/bumblebee.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/bumblebee.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/bumblebee/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/bumblebee/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/business.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/business.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/business/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/business/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/caramellatte.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/caramellatte.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/caramellatte/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/caramellatte/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/cmyk.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/cmyk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/cmyk/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/cmyk/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/coffee.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/coffee.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/coffee/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/coffee/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/corporate.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/corporate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/corporate/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/corporate/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/cupcake.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/cupcake.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/cupcake/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/cupcake/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/cyberpunk.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/cyberpunk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/cyberpunk/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/cyberpunk/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/dark/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/dark/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/dim.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/dim.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/dim/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/dim/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/dracula.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/dracula.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/dracula/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/dracula/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/emerald.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/emerald.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/emerald/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/emerald/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/fantasy.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/fantasy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/fantasy/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/fantasy/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/forest.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/forest.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/forest/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/forest/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/garden.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/garden.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/garden/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/garden/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/halloween.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/halloween.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/halloween/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/halloween/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/lemonade.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/lemonade.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/lemonade/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/lemonade/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/light/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/light/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/lofi.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/lofi.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/lofi/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/lofi/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/luxury.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/luxury.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/luxury/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/luxury/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/night.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/night.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/night/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/night/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/nord.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/nord.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/nord/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/nord/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/object.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/object.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/object.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/pastel.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/pastel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/pastel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/pastel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/retro.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/retro.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/retro/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/retro/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/silk.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/silk.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/silk/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/silk/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/sunset.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/sunset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/sunset/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/sunset/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/synthwave.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/synthwave.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/synthwave/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/synthwave/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/valentine.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/valentine.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/valentine/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/valentine/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/winter.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/winter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/winter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/winter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/wireframe.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/wireframe.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/theme/wireframe/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/theme/wireframe/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/themes.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/themes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/glass.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/glass.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/glass/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/glass/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/join.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/join.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/join/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/join/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/radius.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/radius.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/radius/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/radius/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/typography.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/daisyui/utilities/typography/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/daisyui/utilities/typography/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Dialogs/person-dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Dialogs/person-dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Layout/tab-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Layout/tab-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Layout/top-bar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Layout/top-bar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/Persons/person-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/Persons/person-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/exercise-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/exercise-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-error.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-loaded.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-loaded.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-loading.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-loading.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-no-exercises.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-no-exercises.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-scanning.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/game-page-scanning.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/Pages/settings-page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/Pages/settings-page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/PhoenixDesign/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhoenixDesign/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/input.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/output.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/output.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -21,12 +284,14 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/LaciumLux/Project2.git&quot;,
-    &quot;accountId&quot;: &quot;35dca9cd-e03b-4edc-9d6c-a6f2a8e64342&quot;
+    &quot;url&quot;: &quot;https://github.com/LaciumShvecz/Project2.git&quot;,
+    &quot;accountId&quot;: &quot;ba50226c-92cf-423c-8576-67da1c22b212&quot;
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock://D:/projects/net/LessonsN/Project2/node_modules/.package-lock.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/.vs/Solution2/v17/DocumentLayout.backup.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/package.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -41,15 +306,38 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build-phoenix.executor&quot;: &quot;Run&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="build-phoenix" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-phoenix" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build-phoenix" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a54e2b15-ba36-49ee-9317-e680199bbdd5" name="Changes" comment="" />
@@ -58,8 +346,12 @@
       <option name="presentableId" value="Default" />
       <updated>1763024395748</updated>
       <workItem from="1763024397092" duration="616000" />
-      <workItem from="1763058627749" duration="4939000" />
-      <workItem from="1763373470961" duration="175000" />
+      <workItem from="1763058627749" duration="2453000" />
+      <workItem from="1763062504639" duration="4128000" />
+      <workItem from="1763281805632" duration="25882000" />
+      <workItem from="1763376002654" duration="7331000" />
+      <workItem from="1763543755856" duration="59059000" />
+      <workItem from="1763651549237" duration="16964000" />
     </task>
     <task id="LOCAL-00001" summary="daisi work">
       <option name="closed" value="true" />
@@ -69,13 +361,13 @@
       <option name="project" value="LOCAL" />
       <updated>1763060719888</updated>
     </task>
-    <task id="LOCAL-00002" summary="-">
+    <task id="LOCAL-00002" summary="integration with DaisyUI">
       <option name="closed" value="true" />
-      <created>1763061425860</created>
+      <created>1763324028448</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1763061425860</updated>
+      <updated>1763324028448</updated>
     </task>
     <option name="localTasksCounter" value="3" />
     <servers />
@@ -99,8 +391,8 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="daisi work" />
-    <MESSAGE value="-" />
-    <option name="LAST_COMMIT_MESSAGE" value="-" />
+    <MESSAGE value="integration with DaisyUI" />
+    <option name="LAST_COMMIT_MESSAGE" value="integration with DaisyUI" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

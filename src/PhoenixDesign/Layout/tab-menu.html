@@ -4,60 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix - Tab Menu</title>
-    <link rel="stylesheet" href="../css/tailwind.phoenixui.min.css">
-    <style>
-        .dock {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            background: #1f2937;
-            border-top: 1px solid #374151;
-            padding: 8px;
-            height: 50px;
-        }
-        .dock button {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 8px;
-            background: transparent;
-            border: none;
-            color: #9ca3af;
-            transition: all 0.2s;
-            cursor: pointer;
-        }
-        .dock button:hover {
-            color: #60a5fa;
-        }
-        .dock-active {
-            color: #3b82f6 !important;
-            background: rgba(59, 130, 246, 0.1);
-            border-radius: 8px;
-        }
-        .dock-label {
-            font-size: 10px;
-            margin-top: 4px;
-        }
-    </style>
+    <link rel="stylesheet" href="../css/output.css">
 </head>
-<body class="bg-base-200" style="height: 100vh; display: flex; flex-direction: column;">
+<body class="bg-base-100">
     <!-- Navigation -->
-    <div class="navbar bg-primary text-primary-content">
+    <div class="navbar bg-base-300 flex-shrink-0">
         <div class="flex-1">
-            <a href="../index.html" class="btn btn-ghost text-xl">← Назад к навигации</a>
+            <a href="../index.html" class="btn btn-ghost text-sm sm:text-base md:text-lg lg:text-xl">← Назад к
+                навигации</a>
         </div>
     </div>
 
     <!-- Demo Content -->
     <div class="flex-1 container mx-auto p-8">
-        <div class="card bg-base-100 shadow-xl">
+        <div class="card bg-base-200 shadow-xl">
             <div class="card-body">
                 <h2 class="card-title">Tab Menu Component</h2>
                 <p>Это компонент TabMenu, который отображается в нижней части приложения.</p>
-                <p class="text-sm text-neutral-500 mt-4">Компонент включает вкладки:</p>
-                <ul class="list-disc list-inside text-sm text-neutral-400 mt-2">
+                <p class="text-sm text-base-content/70 mt-4">Компонент включает вкладки:</p>
+                <ul class="list-disc list-inside text-sm text-base-content/50 mt-2">
                     <li>Home (Упражнение)</li>
                     <li>Persons (Участники)</li>
                     <li>Settings (Настройки)</li>
@@ -68,35 +33,37 @@
     </div>
 
     <!-- Tab Menu Component -->
-    <div class="dock dock-md">
-        <button class="dock-active">
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
-            </svg>
-            <span class="dock-label">Home</span>
-        </button>
-
-        <button>
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
-            </svg>
-            <span class="dock-label">Persons</span>
-        </button>
-
-        <button>
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-            </svg>
-            <span class="dock-label">Settings</span>
-        </button>
-
-        <button>
-            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
-            </svg>
-            <span class="dock-label">Game</span>
-        </button>
+    <div class="fixed bottom-0 left-0 right-0 bg-base-100 border-t border-base-300 py-3 px-8 md:px-25 lg:px-35">
+        <div role="tablist" class="tabs tabs-lifted tabs-md w-full justify-between">
+            <a role="tab" class="tab tab-active flex flex-col gap-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+                </svg>
+                <span class="text-xs">Home</span>
+            </a>
+            
+            <a role="tab" class="tab flex flex-col gap-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+                <span class="text-xs">Persons</span>
+            </a>
+            
+            <a role="tab" class="tab flex flex-col gap-1 sm:px-4">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span class="text-xs">Settings</span>
+            </a>
+            
+            <a role="tab" class="tab flex flex-col gap-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                </svg>
+                <span class="text-xs">Game</span>
+            </a>
+        </div>
     </div>
 </body>
 </html>

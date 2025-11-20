@@ -4,22 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Phoenix - Список участников</title>
-    <link rel="stylesheet" href="../../css/tailwind.phoenixui.min.css">
+    <link rel="stylesheet" href="../../css/output.css">
 </head>
-<body class="bg-base-200" style="height: 100vh; overflow: hidden;">
+<body class="min-h-screen bg-base-100 flex flex-col">
     <!-- Navigation -->
-    <div class="navbar bg-primary text-primary-content">
+    <div class="navbar bg-base-300 flex-shrink-0">
         <div class="flex-1">
-            <a href="../../index.html" class="btn btn-ghost text-xl">← Назад к навигации</a>
+            <a href="../../index.html" class="btn btn-ghost text-sm sm:text-base md:text-lg lg:text-xl">← Назад к навигации</a>
         </div>
     </div>
 
-    <div class="flex flex-col h-full overflow-hidden" style="height: calc(100vh - 64px);">
-        <section aria-labelledby="participants" class="flex-1 flex flex-col rounded-lg border border-neutral-800 bg-neutral-900/60 shadow-sm m-4">
+    <div class="flex-1 flex flex-col overflow-hidden">
+        <section aria-labelledby="participants" class="flex-1 flex flex-col rounded-lg bg-base-100 shadow-sm m-4">
             <h2 id="participants" class="sr-only">Участники</h2>
 
             <!-- Тулбар -->
-            <div class="flex items-center justify-between gap-3 p-4 md:p-5 border-b border-neutral-800">
+            <div class="flex flex-col sm:flex-row  justify-between gap-3 p-4 md:p-5 border-b border-base-300">
                 <button type="button" class="btn btn-primary btn-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
@@ -27,7 +27,7 @@
                     Добавить участника
                 </button>
 
-                <div class="w-full max-w-xs">
+                <div class="w-full sm:w-auto max-w-xs">
                     <label for="participants-search" class="sr-only">Поиск</label>
                     <input
                         id="participants-search"
@@ -40,72 +40,121 @@
             <!-- Табличная область -->
             <div class="flex-1 overflow-auto">
                 <table class="w-full border-collapse text-sm">
-                    <thead class="sticky top-0 z-10 bg-neutral-950/80 backdrop-blur supports-[backdrop-filter]:bg-neutral-950/60">
+                    <thead class="bg-base-300 sticky top-0">
                         <tr class="text-left">
-                            <th class="px-4 py-3 font-medium text-neutral-400">ФИО</th>
-                            <th class="px-4 py-3 font-medium text-neutral-400">Дата рождения</th>
-                            <th class="px-4 py-3 font-medium text-neutral-400">Пол</th>
-                            <th class="px-4 py-3 font-medium text-neutral-400">Действия</th>
+                            <th class="px-4 py-3 font-medium text-base-content/70">ФИО</th>
+                            <th class="px-4 py-3 font-medium text-base-content/70 hidden sm:table-cell">Дата рождения</th>
+                            <th class="px-4 py-3 font-medium text-base-content/70">Пол</th>
+                            <th class="px-4 py-3 font-medium text-base-content/70">Действия</th>
                         </tr>
                     </thead>
 
-                    <tbody class="divide-y divide-neutral-800">
-                        <tr class="bg-neutral-800/60 hover:bg-neutral-800/80">
-                            <td class="px-4 py-3 text-neutral-100">Иван Иванов</td>
-                            <td class="px-4 py-3 text-neutral-200">15.03.1990</td>
-                            <td class="px-4 py-3 text-neutral-200">Мужской</td>
+                    <tbody class="divide-y divide-base-300">
+                        <tr class="bg-base-100">
+                            <td class="px-4 py-3 max-w-[90px] sm:max-w-none">
+                                <div class="text-base-content/50 break-words whitespace-normal">Иван Иванов</div>
+                                <div class="text-base-content/50 text-xs opacity-70 sm:hidden mt-1">15.03.1990</div>
+                            </td>
+                            <td class="px-4 py-3 text-base-content/50 hidden sm:table-cell">15.03.1990</td>
+                            <td class="px-4 py-3 text-base-content/50">Мужской</td>
                             <td class="px-4 py-3">
                                 <div class="flex flex-wrap items-center gap-2">
                                     <button type="button" class="btn btn-success btn-xs">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
                                         </svg>
-                                        Стрелять
+                                        <span class="hidden sm:inline">Стрелять</span>
                                     </button>
                                     <button type="button" class="btn btn-info btn-xs">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                                         </svg>
-                                        Результаты
+                                        <span class="hidden sm:inline">Результаты</span>
                                     </button>
                                     <button type="button" class="btn btn-primary btn-xs">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                         </svg>
-                                        Редактировать
+                                        <span class="hidden sm:inline">Редактировать</span>
                                     </button>
                                     <button type="button" class="btn btn-error btn-xs">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
                                         </svg>
-                                        Удалить
+                                        <span class="hidden sm:inline">Удалить</span>
                                     </button>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="bg-neutral-800/60 hover:bg-neutral-800/80">
-                            <td class="px-4 py-3 text-neutral-100">Петр Петров</td>
-                            <td class="px-4 py-3 text-neutral-200">22.07.1985</td>
-                            <td class="px-4 py-3 text-neutral-200">Мужской</td>
+                        <tr class="hover:bg-base-200/60">
+                            <td class="px-4 py-3 text-base-content/50 max-w-[90px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">Петр Петров</div>
+                                <div class="text-xs opacity-70 sm:hidden mt-1">22.07.1985</div>
+                            </td>
+                            <td class="px-4 py-3 text-base-content/50 hidden sm:table-cell">22.07.1985</td>
+                            <td class="px-4 py-3 text-base-content/50">Мужской</td>
                             <td class="px-4 py-3">
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <button type="button" class="btn btn-success btn-xs">Стрелять</button>
-                                    <button type="button" class="btn btn-info btn-xs">Результаты</button>
-                                    <button type="button" class="btn btn-primary btn-xs">Редактировать</button>
-                                    <button type="button" class="btn btn-error btn-xs">Удалить</button>
+                                    <button type="button" class="btn btn-success btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Стрелять</span>
+                                    </button>
+                                    <button type="button" class="btn btn-info btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Результаты</span>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Редактировать</span>
+                                    </button>
+                                    <button type="button" class="btn btn-error btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Удалить</span>
+                                    </button>
                                 </div>
                             </td>
                         </tr>
-                        <tr class="bg-neutral-800/60 hover:bg-neutral-800/80">
-                            <td class="px-4 py-3 text-neutral-100">Мария Сидорова</td>
-                            <td class="px-4 py-3 text-neutral-200">10.11.1992</td>
-                            <td class="px-4 py-3 text-neutral-200">Женский</td>
+                        <tr class="hover:bg-base-200/60">
+                            <td class="px-4 py-3 text-base-content/50 max-w-[90px] sm:max-w-none">
+                                <div class="break-words whitespace-normal">Петр Петров</div>
+                                <div class="text-xs opacity-70 sm:hidden mt-1">22.07.1985</div>
+                            </td>
+                            <td class="px-4 py-3 text-base-content/50 hidden sm:table-cell">22.07.1985</td>
+                            <td class="px-4 py-3 text-base-content/50">Мужской</td>
                             <td class="px-4 py-3">
                                 <div class="flex flex-wrap items-center gap-2">
-                                    <button type="button" class="btn btn-success btn-xs">Стрелять</button>
-                                    <button type="button" class="btn btn-info btn-xs">Результаты</button>
-                                    <button type="button" class="btn btn-primary btn-xs">Редактировать</button>
-                                    <button type="button" class="btn btn-error btn-xs">Удалить</button>
+                                    <button type="button" class="btn btn-success btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Стрелять</span>
+                                    </button>
+                                    <button type="button" class="btn btn-info btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Результаты</span>
+                                    </button>
+                                    <button type="button" class="btn btn-primary btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Редактировать</span>
+                                    </button>
+                                    <button type="button" class="btn btn-error btn-xs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                        </svg>
+                                        <span class="hidden sm:inline">Удалить</span>
+                                    </button>
                                 </div>
                             </td>
                         </tr>
